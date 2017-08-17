@@ -21,14 +21,12 @@ Armis N Play notifications is a react/redux/rxjs interface using Armis NLP with 
 
 1. [Install Yarn](https://yarnpkg.com/lang/en/docs/install/)
 2. Download and extract
-3. Run ```yarn add https://github.com/randall5559/armis.git```
+3. Run ```yarn```
 4. Run ```yarn start``` to start app
 
 #### the Node way
 
 1. [Install Node.js](https://nodejs.org/en/download/)
 2. Download and extract
-3. Run ```npm install https://github.com/randall5559/armis.git```
+3. Run ```npm install```
 4. Run `npm start` to start app
-
-
