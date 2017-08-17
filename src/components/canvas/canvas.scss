@@ -1,0 +1,27 @@
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: center; /* Extra space in Cross Axis */
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ececec;
+
+  .results-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-right: solid thin #ccc;
+  }
+
+  .notifications-box {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none
+}
+
