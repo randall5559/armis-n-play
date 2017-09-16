@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An example of Armis being used with react tool components",
   "main": "index.js",
-  "repository": "https://github.com/randall5559/github-graphql-example-react",
+  "repository": "https://github.com/randall5559/armis-n-play",
   "author": "Ran",
   "license": "MIT",
   "scripts": {

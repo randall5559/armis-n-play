@@ -73,7 +73,7 @@ export const setNotificationEpic = (action$) =>
       let notifications = data.payload.results.reduce((acc, obj) => {
         const { number, date, time } = obj;
 
-        if (date.length > 0 && time.length > 0 || number.length > 0) {
+        // if (date.length > 0 && time.length > 0 || number.length > 0) {
           let message = `${obj.action} ${obj.tags.join(' ')}`;
 
           // customize it to bypass withCred true issue
@@ -92,7 +92,8 @@ export const setNotificationEpic = (action$) =>
             message: message,
             time: (date.length > 0 && time.length > 0) ? `${date[0]} at ${time[0]}` : number[0]
           });
-        }
+
+        // }
 
         return acc;
       }, []);

@@ -39,6 +39,7 @@ export default class Notification extends React.Component {
 
         const { notifications, deleteNotification } = this.props;
 
+        console.log(notifications);
         // create notification dom list
         const notificationsList = (notifications.length > 0) ?
             notifications.map((obj, id) =>

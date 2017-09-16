@@ -22,7 +22,10 @@ export default class App extends React.Component {
         super();
 
         // init Armis with notification context
-        this.armis = new Armis([], 'all');
+        this.armis = new Armis([{
+            context: 'notification',
+            tags: ['remind', 'send']
+        }], 'all');
     }
 
 
