@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Armis N Play</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="./libs/pretty-json-master/css/pretty-json.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="text/javascript" src="index_bundle.js"></script></body>
+
+  <!-- ------------------------------------------------------------------------>
+  <!-- The scripts below are for get Pretty Json to work in the Browser -->
+  <!-- ------------------------------------------------------------------------>
+
+  <!-- lib -->
+  <script type="text/javascript" src="./libs/pretty-json-master/libs/jquery-1.11.1.min.js" ></script>
+  <script type="text/javascript" src="./libs/pretty-json-master/libs/underscore-min.js" ></script>
+  <script type="text/javascript" src="./libs/pretty-json-master/libs/backbone-min.js" ></script>
+
+  <!-- src build -->
+  <script type="text/javascript" src="./libs/pretty-json-master/build/pretty-json-min.js" ></script>
+
+
+  <!-- ------------------------------------------------------------------------>
+  <!-- The scripts below are for Push Notification through OneSignal -->
+  <!-- ------------------------------------------------------------------------>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "54a6b744-63ac-4dee-8774-808da507021d",
+      autoRegister: false,
+      notifyButton: {
+        enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
+</html>
