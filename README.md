@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Armis N Play notifications is a react/redux/rxjs interface using Armis NLP with Service Workers. It's still somewhat buggy and in need of a couple updates. Goal is to give user a Armis use case scenario.
+Armis N Play notifications is a react/redux/rxjs interface using Armis NLP with Service Workers. Goal is to show how notification .
 
 [See Online Example](https://notifications-4ea07.firebaseapp.com/)
 

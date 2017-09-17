@@ -39,7 +39,6 @@ export default class Notification extends React.Component {
 
         const { notifications, deleteNotification } = this.props;
 
-        console.log(notifications);
         // create notification dom list
         const notificationsList = (notifications.length > 0) ?
             notifications.map((obj, id) =>
@@ -55,7 +54,7 @@ export default class Notification extends React.Component {
             ) :
             (
                 <p style={ styles.paddingLeftRight }>
-                    You currently have no Notificaitons added to your list. Type one out below to get started.
+                    Type something below to get a notification.
                 </p>
             );
 

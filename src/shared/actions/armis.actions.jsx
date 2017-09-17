@@ -74,24 +74,24 @@ export const setNotificationEpic = (action$) =>
         const { number, date, time } = obj;
 
         // if (date.length > 0 && time.length > 0 || number.length > 0) {
-          let message = `${obj.action} ${obj.tags.join(' ')}`;
+        let message = data.payload.speech;
 
-          // customize it to bypass withCred true issue
-          let response = Rx.Observable.ajax({
-              url: `https://serene-ocean-30984.herokuapp.com/?text=REMINDER: ${message}`,
-              crossDomain: true,
-              createXHR: function () {
-                return new XMLHttpRequest();
-              }
-          })
-          .subscribe(_res => {
-              // console.log(_res);
-          });
+        // customize it to bypass withCred true issue
+        let response = Rx.Observable.ajax({
+            url: `https://serene-ocean-30984.herokuapp.com/?text=REMINDER: ${message}`,
+            crossDomain: true,
+            createXHR: function () {
+              return new XMLHttpRequest();
+            }
+        })
+        .subscribe(_res => {
+            // console.log(_res);
+        });
 
-          acc.push({
-            message: message,
-            time: (date.length > 0 && time.length > 0) ? `${date[0]} at ${time[0]}` : number[0]
-          });
+        acc.push({
+          message: message,
+          time: (date.length > 0 && time.length > 0) ? `${date[0]} at ${time[0]}` : number[0]
+        });
 
         // }
 
